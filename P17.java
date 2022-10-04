@@ -14,7 +14,7 @@ import java.util.Scanner;
     for(int i=1;i<n;i++){
         x=a[i];
         j=i-1;
-        while((j>-1)&&(x<a[j])){
+        while((j>=0)&&(x<a[j])){
             a[j+1]=a[j];
             j=j-1;
         }
