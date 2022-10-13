@@ -3,7 +3,7 @@ import java.util.Scanner;
   public static void main(String[] age){
   Scanner sc = new Scanner(System.in);
   System.out.print("enter by user array lenth :- ");
-    int temp,n=sc.nextInt();
+    int n=sc.nextInt();
     int[] a=new int[n];
     for(int i=0;i<n;i++){
         a[i]=sc.nextInt();
