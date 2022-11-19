@@ -7,16 +7,14 @@ import java.util.Scanner;
   int m=s.nextInt();
   
     if (h <0 || m < 0 || h >12 || m > 60)
-            System.out.println("Wrong input");
- 
+     System.out.println("Wrong input");
         if (h == 12)
             h = 0;
         if (m == 60)
-       {
-        m = 0;
-        h += 1;
-        if(h>12)
-          h = h-12;
+        { m = 0;
+          h += 1;
+            if(h>12)
+              h = h-12;
         }
  
         ha = (int)(0.5 * (h*60 + m));
