@@ -14,7 +14,6 @@ import java.util.Scanner;
         if(ans==0){
             i++;
         }
-        System.out.println(ans+" ju");
         n=n/2;
     }
     System.out.println(ans*(int)Math.pow(10,i));
