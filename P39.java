@@ -11,8 +11,9 @@ import java.util.Scanner;
     }
   }
   public static void rotate(int arr[],int n){
-    reverse(arr,0,arr.length-n-1);
+    // left only reverse(arr,0,arr.length-1);
     reverse(arr,arr.length-n,arr.length-1);
+    reverse(arr,0,arr.length-n-1);
     reverse(arr,0,arr.length-1);
   }
   public static void reverse(int arr[],int n,int m){

@@ -1,6 +1,7 @@
-import java.util.Scanner;
+import java.util.*;
  class P40{
   public static void main(String[] age){
+    int nums[] = {1,2,15,3};
    int count = 0;
         for (int i = 1; i < nums.length && count < 2; i++) {
             if (nums[i] >= nums[i - 1]) {
@@ -8,7 +9,7 @@ import java.util.Scanner;
                 continue; // non-decrease
             }
             
-                System.out.println(i+" 22 "+nums[i] +" "+nums[i - 1] +" "+(nums[i] >= nums[i - 1]));
+                System.out.println(i+" i "+nums[i] +" "+nums[i - 1] +" "+(nums[i] >= nums[i - 1]));
             if (i - 2 >= 0 && nums[i - 2] > nums[i]) {
                 nums[i] = nums[i - 1]; // corner case 3 4 2 4
             } else {
@@ -16,6 +17,7 @@ import java.util.Scanner;
             }
             count++; 
         }
-        return count < 2;
+        System.out.println(" "+Arrays.toString(nums));
+        return ;
   }
 }

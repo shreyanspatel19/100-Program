@@ -16,6 +16,6 @@ import java.util.Scanner;
         }
         n=n/2;
     }
-    System.out.println(ans*(int)Math.pow(10,i));
+    System.out.println(ans*(int)Math.pow(10,i)+" "+i);
   }
 }

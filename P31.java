@@ -24,10 +24,4 @@ import java.util.*;
     }
     System.out.println(Arrays.toString(array));
   }
-  public static void swap(int a,int b){
-    int temp;
-    temp=a;
-    a=b;
-    b=temp;
-  }
 }
