@@ -1,7 +1,7 @@
 import java.util.*;
  class P41{
   public static void main(String[] age){
-  int n = 130;
+  int n = 10130;
   ArrayList<Integer> al = new ArrayList<>();
     if(n<0){
         n = n*-1;

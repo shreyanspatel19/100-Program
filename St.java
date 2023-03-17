@@ -1,7 +1,18 @@
 import java.util.*;
  class St{
   public static void main(String[] age){
-  System.out.println(areIsomorphic("aab","xxy"));
+round();
+//   System.out.println(areIsomorphic("aab","xxy"));
+  }
+  public static void round(){
+       double xd = 2.1199;
+    double mult = xd * 100.0;
+    double add = mult + 0.5;
+    int reuslts = (int) add;
+
+    double result = reuslts / 100.0;
+
+    System.out.println(result);// 2.13
   }
   public static boolean areIsomorphic(String str1,String str2)
     {

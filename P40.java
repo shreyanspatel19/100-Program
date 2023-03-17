@@ -17,7 +17,7 @@ import java.util.*;
             }
             count++; 
         }
-        System.out.println(" "+Arrays.toString(nums));
+        System.out.println(count+" "+Arrays.toString(nums));
         return ;
   }
 }

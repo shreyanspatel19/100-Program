@@ -2,7 +2,7 @@ import java.util.Scanner;
  class P47{
   public static void main(String[] age){
     int n = 123;
-    System.out.println(HexadecimalToDecimal(DecimaToHexadecimal(n)));
+    System.out.println(DecimaToHexadecimal(n));
   }
   public static int HexadecimalToDecimal(String s){
     int count = 0;
@@ -21,7 +21,7 @@ import java.util.Scanner;
     String s = "";
     while(n != 0){
         if(n % 16 >= 10){
-            s = (char)(n % 16 + 55) +""+s;
+            s = (char)(n % 16 + '7') +""+s;
         }else{
             s = n % 16 +""+s;
         }
