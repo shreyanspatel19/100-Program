@@ -1,31 +1,31 @@
 import java.util.*;
  class P35{
 public static int[] intersect(int[] nums1, int[] nums2) {
-        Map<Integer, Integer> map = new HashMap<>();
-        List<Integer> result = new ArrayList<>();
-
-        for (int num : nums1) {
-            map.put(num, map.getOrDefault(num, 0) + 1);
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        int j = 0;
+        ArrayList<Integer> al = new ArrayList<Integer>();
+        for(int i = 0; i < nums1.length && j < nums2.length ; i++){
+           if( nums1[i] == nums2[j]){
+            al.add(nums1[i]);
+            j++;
+           }else if(nums1[i] < nums2[j]){
+                continue;
+           }else{
+            j++;
+            i--;
+           }
         }
-
-        for (int num : nums2) {
-            if (map.containsKey(num) && map.get(num) > 0) {
-                result.add(num);
-                map.put(num, map.get(num) - 1);
-            }
+        int intersection[] = new int[al.size()];
+        for (int k = 0; k < al.size(); k++) {
+            intersection[k] = al.get(k);
         }
-
-        int[] intersection = new int[result.size()];
-        for (int i = 0; i < result.size(); i++) {
-            intersection[i] = result.get(i);
-        }
-
         return intersection;
     }
 
-    public static void main(String[] args) {
-        int[] nums1 = {1, 2, 2, 1};
-        int[] nums2 = {2, 2};
+    public static void main(String[] args){
+        int[] nums1 = {1, 2, 3, 1};
+        int[] nums2 = {2, 1};
         int[] intersection = intersect(nums1, nums2);
 
         System.out.println("Intersection: " + Arrays.toString(intersection));
