@@ -14,7 +14,7 @@ import java.util.Scanner;
     int count = 0;
     int ans = 0;
     for(int m : a){
-        count += m - avg;
+        count += m - avg; 
        ans = Math.max(ans ,Math.max(Math.abs(count),m-avg)); 
     }
     System.out.println("move is only :- "+ans);

@@ -3,7 +3,7 @@ import java.util.*;
 
  class P63{
   public static void main(String[] age){
-    int a[]={1,2,15,3};
+    int a[]={1,2,3};
     permutations(0,a);
   }
 

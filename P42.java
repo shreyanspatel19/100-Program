@@ -2,7 +2,7 @@ import java.util.*;
  class P42{
   public static void main(String[] age){
   int ar[] = {1, -1} ;
-  int k = 1;
+  int k = 2;
   // time limited exted 😶😶😶😶😶
   System.out.println(Arrays.toString(ar));
   int ans[] = new int[ar.length - k +1];
@@ -24,9 +24,11 @@ import java.util.*;
     }
     ans[ans.length-1] = max;
 
-System.out.println(Arrays.toString(ans));
-
+    System.out.println(Arrays.toString(ans));
+  }
+  }
 // otimized
+class P421{
  public class Pair implements Comparable<Pair>{
         int idx;
         int val;
@@ -60,5 +62,6 @@ System.out.println(Arrays.toString(ans));
 
     }
     System.out.println(Arrays.toString(ans));
+    return ans;
   }
 }
